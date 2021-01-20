@@ -1,0 +1,1313 @@
+body {
+	margin: 0;
+}
+
+.VistaPaisaje {
+	position: relative;
+    background: white;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    animation-name: movimientoCielo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes movimientoCielo {
+
+0% {
+
+	background: white;
+}
+
+20% {
+
+	background: cornflowerblue;
+}
+
+40% {
+
+	background: dimgray;
+}
+
+60% {
+
+	background: black;
+}
+
+80% {
+
+
+	background: indigo;
+}
+
+
+100% {
+
+
+	background: white;
+}
+
+}
+
+.luna {
+
+	background: url('moon.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	width: 1300px;
+    height: 210px;
+    margin-top: -400px;
+    position: absolute;
+    margin-left: 100px;
+    animation: movimientoLuna;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movimientoLuna {
+
+0% {
+
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+
+	opacity: 0.1;
+}
+
+60% {
+
+	opacity: 2;
+
+
+}
+
+80% {
+
+	opacity: 1;
+	margin-left: -50px;
+
+}
+
+100% {
+
+	margin-left: -300px;
+	opacity: 0;
+}
+}
+
+
+
+.sol {
+	background: url('sun.png');
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+    width: 1300px;
+    height: 210px;
+    margin-top: -400px;
+    position: absolute;
+    margin-right: -30px;
+    animation: movimientoSol;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movimientoSol {
+
+0% {
+
+	margin-right: -30px;
+}
+
+20% {
+
+	transform: translate(-43%);
+    opacity: 0.5;
+
+}
+
+40% {
+
+	opacity: 0;
+	transform: translate(-85%);
+}
+
+60% {
+
+	transform: translate(-100%);
+	opacity: 0;
+}
+
+80% {
+
+	opacity: 0;
+	transform: translate(10%);
+}
+
+100% {
+
+
+	margin-right: -30px;
+}
+
+}
+
+
+
+
+.nubes {
+
+	position: absolute;
+	background: url('cloud.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 300px;
+    height: 60px;
+}
+
+.nube1 {
+
+    transform: rotate(360deg) scaleX(-1);
+    margin-left: -1300px;
+    margin-top: -410px;
+    animation: movimientoNube1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movimientoNube1 {
+
+0% {
+
+	margin-top: -410px;
+	margin-right: -50px;
+}
+
+20% {
+
+	margin-top: -550px;
+	margin-right: -100px;
+}
+
+40% {
+
+	opacity: 0;
+	margin-top: -550px;
+	margin-right: -600px;
+}
+
+60% {
+
+	opacity: 0;
+}
+
+80% {
+
+	opacity: 0.1;
+}
+
+100% {
+
+	margin-top: -410px;
+	margin-right: -50px;
+
+}
+}
+
+
+
+
+.nube2 {
+
+	margin-top: -270px;
+    margin-left: -340px;
+	animation: movimientoNube2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoNube2 {
+
+0% {
+
+	margin-top: -270px;
+    margin-left: -340px;
+
+}
+
+20% {
+
+	margin-top: -350px;
+	margin-left: -1200px;
+}
+
+40% {
+
+	margin-top: -350px;
+	margin-left: -1280px;
+	opacity: 0;
+	
+}
+
+60% {
+
+	opacity: 0;
+	
+}
+
+80% {
+
+	opacity: 0.1;
+	
+}
+
+100% {
+
+	margin-top: -270px;
+    margin-left: -340px;
+	
+
+}
+
+}
+
+.nube3 {
+
+	transform: rotate(360deg) scaleX(-1);
+    margin-left: -170px;
+    margin-top: -470px;
+    animation: movimientoNube3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movimientoNube3	{
+
+0%	{
+
+	margin-top: -470px;
+	margin-left: -170px;
+}
+
+20% {
+
+	margin-top: -250px;
+	margin-left: 500px;
+}
+
+40% {
+
+	margin-top: -250px;
+	margin-left: 500px;
+	opacity: 0;
+	
+}
+
+60% {
+
+	opacity: 0;
+	
+}
+
+80% {
+
+	opacity: 0.1;
+	
+}
+
+100% {
+
+	margin-top: -470px;
+	margin-left: -170px;
+	
+
+}
+
+}
+
+.nube4 {
+
+	margin-top: -370px;
+    margin-left: 800px;
+    animation: movimientoNube4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoNube4 {
+
+0% {
+
+	margin-top: -370px;
+	margin-left: 800px;
+}
+
+20% {
+
+	margin-top: -500px;
+	margin-left: 1200px;
+	
+}
+
+40% {
+
+	margin-top: -350px;
+	margin-left: 1400px;
+	opacity: 0;
+
+}
+
+60% {
+	opacity: 0;
+
+}
+
+80% {
+	opacity: 0.1;
+}
+
+100% {
+	margin-top: -370px;
+	margin-left: 800px;
+
+}
+
+}
+
+.bosque {
+
+	background: url('foreat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    margin-top: 270px;
+    animation: colorArbol;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorArbol {
+
+0% {
+	opacity: 5;
+}	
+
+20% {
+
+	filter: brightness(50%);
+
+}	
+
+40% {
+	opacity: 3;
+}	
+
+60% {
+	opacity: 2;
+}	
+
+80% {
+	opacity: 1;
+}	
+
+100% {
+	opacity: 5;
+}	
+}
+
+
+.planta {
+
+	background: url('plant.png');
+	margin-bottom: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 600px;
+    animation: movimientoplanta;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta {
+
+0%	{
+
+	margin-top: 600px;
+
+}
+
+20%	{
+	
+	margin-top: 700px;
+}
+
+40%	{
+
+	margin-top: 800px;
+	
+}
+
+60%	{
+	
+	margin-top: 850px;
+
+}
+
+80%	{
+	
+	margin-top: 700px;
+
+}
+
+100%	{
+
+	margin-top: 600px;
+}
+
+}
+
+
+
+.planta1 {
+
+	background: url('flower.png');
+	background-position: right;
+	margin-bottom: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 590px;
+    margin-right: -900px;
+    animation: movimientoplanta1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta1 {
+
+0% {
+
+	margin-top: 590px;
+
+}
+
+20% {
+	margin-top: 690px;
+
+}
+
+40% {
+
+	margin-top: 790px;
+
+}
+
+60% {
+
+	margin-top: 940px;
+
+}
+
+80% {
+
+	margin-top: 690px;
+
+}
+
+100% {
+
+	  margin-top: 590px;
+
+}
+
+}
+
+
+
+.planta2 {
+
+	background: url('flower4.png');
+	background-position: right;
+	margin-bottom: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 590px;
+    margin-right: -300px;
+    animation: movimientoplanta2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta2 {
+
+0% {
+
+	margin-top: 590px;
+
+
+}
+
+20% {
+	margin-top: 690px;
+
+
+}
+
+40% {
+	margin-top: 790px;
+
+
+}
+
+60% {
+
+	margin-top: 940px;
+
+}
+
+80% {
+
+	margin-top: 690px;
+
+}
+
+100% {
+
+	margin-top: 590px;
+
+}
+
+}
+
+
+.planta3 {
+
+	background: url('garden-plant.png');
+	margin-bottom: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 590px;
+    margin-right: -680px;
+    animation: movimientoplanta3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta3 {
+
+0% {
+
+	margin-top: 590px;
+
+
+}
+
+20% {
+	margin-top: 690px;
+
+
+}
+
+40% {
+	margin-top: 790px;
+
+
+}
+
+60% {
+
+	margin-top: 940px;
+
+}
+
+80% {
+
+	margin-top: 690px;
+
+}
+
+100% {
+
+	margin-top: 590px;
+
+}
+
+}
+
+
+
+.planta4 {
+
+	background: url('flower3.png');
+	margin-bottom: 100px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 590px;
+    margin-left: -300px;
+    animation: movimientoplanta4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta4 {
+
+0% {
+
+	margin-top: 590px;
+
+
+}
+
+20% {
+	margin-top: 690px;
+
+
+}
+
+40% {
+	margin-top: 790px;
+
+
+}
+
+60% {
+
+	margin-top: 940px;
+
+}
+
+80% {
+
+	margin-top: 690px;
+
+}
+
+100% {
+
+	margin-top: 590px;
+
+}
+
+}
+
+.planta5 {
+
+	background: url('cactus.png');
+	margin-bottom: 100px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 586px;
+    margin-left: -600px;
+    animation: movimientoplanta5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta5 {
+
+0% {
+
+	margin-top: 586px;
+
+
+}
+
+20% {
+	margin-top: 686px;
+
+
+}
+
+40% {
+	margin-top: 786px;
+
+
+}
+
+60% {
+
+	margin-top: 936px;
+
+}
+
+80% {
+
+	margin-top: 686px;
+
+}
+
+100% {
+
+	margin-top: 586px;
+
+}
+
+}
+
+.planta6 {
+
+	background: url('flower2.png');
+	margin-bottom: 100px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 125px;
+    margin-top: 590px;
+    margin-left: -900px;
+    animation: movimientoplanta6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimientoplanta6 {
+
+0% {
+
+	margin-top: 590px;
+
+
+}
+
+20% {
+	margin-top: 690px;
+
+
+}
+
+40% {
+	margin-top: 790px;
+
+
+}
+
+60% {
+
+	margin-top: 940px;
+
+}
+
+80% {
+
+	margin-top: 690px;
+
+}
+
+100% {
+
+	margin-top: 590px;
+
+}
+
+}
+
+.suelo {
+	background-color: green;
+	width: 1300px;
+    height: 30px;
+    margin-top: 639px;
+    border-radius: 20px;
+    animation: pasto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pasto {
+
+0%	{
+	opacity: 0.5;
+}
+
+20%	{
+	opacity: 2;
+}
+
+40%	{
+	opacity: 2;
+}
+
+60%	{
+	opacity: 2;
+}
+
+80%	{
+	opacity: 2;
+}
+
+100%	{
+	opacity: 0.5;
+}
+
+}
+
+.termometro {
+
+	position: absolute;
+	background: url("1817036.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100px;
+    height: 125px;
+    margin-right: 92%;
+    cursor: pointer;
+
+
+}
+
+
+.estrellas {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 8%;
+    margin-top: -265px;
+    animation: movstar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movstar {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas1 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 43%;
+    margin-top: -193px;
+    animation: movstar1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movstar1 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas2 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 21%;
+    margin-top: -392px;
+    animation: movstar2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movstar2 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas3 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: -10%;
+    margin-top: -500px;
+    animation: movstar3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movstar3 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas4 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 40%;
+    margin-top: -520px;
+    animation: movstar4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movstar4 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas5 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: -32%;
+    margin-top: -370px;
+    animation: movstar5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movstar5 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas6 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: -75%;
+    margin-top: -370px;
+    animation: movstar6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movstar6 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas7 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: -57%;
+    margin-top: -270px;
+    animation: movstar7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movstar7 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
+
+.estrellas8 {
+
+	position: absolute;
+    background-color: transparent;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: -56%;
+    margin-top: -495px;
+    animation: movstar8;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movstar8 {
+
+0% {
+	opacity: 0;
+}
+
+20% {
+
+	opacity: 0;
+}
+
+40% {
+	opacity: 0.2;
+}
+
+60% {
+	opacity: 1;
+}
+
+80% {
+	opacity: 0.1;
+
+}
+
+100% {
+	opacity: 0;
+}
+
+}
